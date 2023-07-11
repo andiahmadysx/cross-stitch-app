@@ -1,0 +1,99 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*  */
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  text-align: center;
+}
+
+header{
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+
+.container {
+  width: 600px;
+  border: 1px solid #ccc;
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.grid-wrapper{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.inputs{
+    display: flex;
+    gap: 1em;
+}
+label{
+    display: block;
+    margin-bottom: 3px;
+}
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 75px;
+    height: 3em;
+    border: none;
+    margin-top: -4px;
+}
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 5px;
+}
+input[type="color"]::-moz-color-swatch{
+    border-radius: 5px;
+}
+input[type="number"]{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+}
+.buttons{
+    display: flex;
+    gap: .3em;
+}
+button{
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+#create-button{
+    color: white;
+    background-color: #0275d8;
+}
+#grid{
+  display: grid;
+  /* grid-template-columns: repeat(10, 1fr); */
+}
+.tile{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+    font-family: "Karla", cursive;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#error-message{
+    color: #ff0000;
+}

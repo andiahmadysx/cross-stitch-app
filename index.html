@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross Stitch App</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header>
+        <h1>Cross Stitch App </h1>
+    </header>
+    <div class="container">
+      <div class="inputs">
+        <!-- heigh input -->
+        <div class="input-wrapper">
+          <label for="height-input">Height:</label>
+          <input
+            type="number"
+            name="height-input"
+            id="height-input"
+            min="1"
+            max="20"
+            value="10"
+          />
+        </div>
+
+        <!-- width input -->
+        <div class="input-wrapper">
+          <label for="width-input">Width:</label>
+          <input
+            type="number"
+            name="width-input"
+            id="width-input"
+            min="1"
+            max="20"
+            value="10"
+          />
+        </div>
+
+        <!-- color input -->
+        <div class="input-wrapper">
+          <label for="color-input">Color:</label>
+          <input
+            type="color"
+            name="color-input"
+            id="color-input"
+            value="#000000"
+          />
+        </div>
+      </div>
+
+      <!-- buttons -->
+      <div class="buttons">
+        <button id="create-button">Create Grid</button>
+        <button id="save-button">Save Image</button>
+        <button id="clear-button">Clear</button>
+      </div>
+
+      <!-- error message -->
+      <p id="error-message"></p>
+
+      <!-- grid container -->
+      <div class="grid-wrapper">
+        <div id="grid"></div>
+      </div>
+    </div>
+
+    <!-- html2canvas libraries -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
