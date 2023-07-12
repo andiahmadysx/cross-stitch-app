@@ -1,6 +1,6 @@
 # Cross Stitch App
 
-![Cross Stitch App Screenshot](https://github.com/andiahmadysx/cross-stitch-app/blob/main/images/screenshoot.png?raw=true)
+![Cross Stitch App Screenshot](https://github.com/andiahmadysx/cross-stitch-app/blob/main/images/screenshot.png?raw=true)
 
 This is a simple web application for creating and designing cross stitch patterns. It allows users to create their own patterns by selecting colors and placing stitches on a grid.
 
